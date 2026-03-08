@@ -1,0 +1,12 @@
+name:Run python script
+on:[push]
+jobs:
+run-python:
+runs-on:ubuntu-latest
+steps:
+- name: checkout repository
+uses: action/checkout@v3
+- name:set up python
+uses: action/set up python@v4
+- name: Run python script
+run: python nywork.py 

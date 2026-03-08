@@ -3,10 +3,11 @@ url= "https://api.github.com/orgs/microsoft/repos"
 response=requests.get(url)
 repos=response.json()
 print(" Microsoft open source repositories")
-for repo in repos[5]:
-  Name=repo["Name"]
-  Description=repo["Description"]
-  Url=repo["Url"]
-  print("Repository name :",Name)
-  print("Description:",Description)
-  print("url:",Url)
+for repo in repos:
+  name = repo["name"]
+  description = repo["description"]
+  url = repo["url"]
+  print("Repository name :",name)
+  print("Description:",description)
+  print("url:",url)
+  print("-" * 10)

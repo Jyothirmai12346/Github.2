@@ -1,6 +1,6 @@
 
 
-name: My self
+name: Run python script
 on: [push]
 
 jobs:

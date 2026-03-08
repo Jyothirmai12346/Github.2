@@ -1,13 +1,13 @@
-name: Run python script
+name: My second
 on: [push]
-
 jobs:
-  run-python:
-    runs-on: ubuntu-latest
-    steps:
-      - name: checkout repository
-        uses: actions/checkout@v3
-      - name: setup Python
-        uses: actions/setup-python@v4
-      - name: Run python script
-        run: python nywork.py
+run-python:
+run-on: ubuntu-latest
+steps:
+-name: checkout repository
+uses: action/checkout@v3
+-name: setup Python
+uses: action/setup-python@v4
+-name: run python script
+run: pytho even.py
+
